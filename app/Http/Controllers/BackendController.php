@@ -8,6 +8,6 @@ class BackendController extends Controller
 {
     public function admin()
     {
-        return view('backend');
+        return view('backend.dashboard');
     }
 }
