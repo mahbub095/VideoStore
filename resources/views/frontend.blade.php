@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="zxx">
-	
+
 <head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -100,7 +100,7 @@
 						<a href="#"><i class="icofont icofont-camera"></i></a>
 					</div>
 				</form>
-				
+
 			</div>
 		</div>
 		<div class="buy-ticket">
@@ -369,7 +369,7 @@
 										<img src="{{asset('frontend/assets/img/cast/cast3.png')}}" alt="about" />
 									</div>
 									<div class="single-slide-cast">
-										<img src="{{asset('frontend/assets/img/cast/cast4.png"')}} alt="about" />
+										<img src="{{asset('frontend/assets/img/cast/cast4.png"')}}" alt="about" />
 									</div>
 									<div class="single-slide-cast">
 										<img src="{{asset('frontend/assets/img/cast/cast5.png')}}" alt="about" />
@@ -628,7 +628,7 @@
 					<div class="col-lg-6 text-center text-lg-right">
 					    <div class="portfolio-menu">
 							<ul>
-								<li data-filter="*" class="active">Latest</li>
+								<li data-filter=".soon" class="active">Latest</li>
 								<li data-filter=".soon">Comming Soon</li>
 								<li data-filter=".top">Top Rated</li>
 								<li data-filter=".released">Recently Released</li>
@@ -642,12 +642,14 @@
 						<div class="row portfolio-item">
 							<div class="col-md-4 col-sm-6 soon released">
 								<div class="single-portfolio">
+                                  {{--  @foreach($videos as $key => $video)--}}
 									<div class="single-portfolio-img">
-										<img src="assets/img/portfolio/portfolio1.png" alt="portfolio" />
+										<img src="{{asset('frontend/assets/img/portfolio/portfolio1.png')}}"  />
 										<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
 											<i class="icofont icofont-ui-play"></i>
 										</a>
 									</div>
+                             {{--       @endforeach--}}
 									<div class="portfolio-content">
 										<h2>Boyz II Men</h2>
 										<div class="review">
@@ -663,10 +665,10 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 top">
+						{{--	<div class="col-md-4 col-sm-6 top">
 								<div class="single-portfolio">
 									<div class="single-portfolio-img">
-										<img src="assets/img/portfolio/portfolio2.png" alt="portfolio" />
+										<img src="{{asset('frontend/assets/img/portfolio/portfolio2.png')}}"  alt="portfolio" />
 										<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
 											<i class="icofont icofont-ui-play"></i>
 										</a>
@@ -689,7 +691,7 @@
 							<div class="col-md-4 col-sm-6 soon">
 								<div class="single-portfolio">
 									<div class="single-portfolio-img">
-										<img src="assets/img/portfolio/portfolio3.png" alt="portfolio" />
+										<img src="{{asset('frontend/assets/img/portfolio/portfolio3.png')}}"   alt="portfolio"/>
 										<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
 											<i class="icofont icofont-ui-play"></i>
 										</a>
@@ -712,7 +714,7 @@
 							<div class="col-md-4 col-sm-6 top released">
 								<div class="single-portfolio">
 									<div class="single-portfolio-img">
-										<img src="assets/img/portfolio/portfolio4.png" alt="portfolio" />
+										<img src="{{asset('frontend/assets/img/portfolio/portfolio4.png')}}" alt="portfolio" />
 										<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
 											<i class="icofont icofont-ui-play"></i>
 										</a>
@@ -777,12 +779,12 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div>--}}
 						</div>
 					</div>
 					<div class="col-lg-3 text-center text-lg-left">
 					    <div class="portfolio-sidebar">
-							<img src="assets/img/sidebar/sidebar1.png" alt="sidebar" />
+							<img src="{{asset('frontend/assets/img/sidebar/sidebar1.png')}}" alt="sidebar" />
 							<img src="assets/img/sidebar/sidebar2.png" alt="sidebar" />
 							<img src="assets/img/sidebar/sidebar3.png" alt="sidebar" />
 							<img src="assets/img/sidebar/sidebar4.png" alt="sidebar" />
@@ -805,7 +807,7 @@
 				<div class="row">
                     <div class="col-md-9">
 						<div class="video-area">
-							<img src="assets/img/video/video1.png" alt="video" />
+							<img src="{{asset('frontend/assets/img/video/video1.png')}}" alt="video" />
 							<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
 								<i class="icofont icofont-ui-play"></i>
 							</a>
@@ -827,21 +829,23 @@
                     <div class="col-md-3">
 						<div class="row">
 							<div class="col-md-12 col-sm-6">
+                                @foreach($videos as $key => $video)
 								<div class="video-area">
-									<img src="assets/img/video/video2.png" alt="video" />
+									<img src="{{ URL::asset("images/".$video->image) }}" alt="video" />
+									<a href="{{($video->link)}}" class="popup-youtube">
+										<i class="icofont icofont-ui-play"></i>
+									</a>
+								</div>
+                                @endforeach
+							</div>
+							{{--<div class="col-md-12 col-sm-6">
+								<div class="video-area">
+									<img src="{{asset('frontend/assets/img/video/video3.png')}}" alt="video" />
 									<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
 										<i class="icofont icofont-ui-play"></i>
 									</a>
 								</div>
-							</div>
-							<div class="col-md-12 col-sm-6">
-								<div class="video-area">
-									<img src="assets/img/video/video3.png" alt="video" />
-									<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
-										<i class="icofont icofont-ui-play"></i>
-									</a>
-								</div>
-							</div>
+							</div>--}}
 						</div>
                     </div>
 				</div>

@@ -8,7 +8,7 @@
                 <div class="col-lg-10">
 
                     <div class="form-panel">
-                        <form role="form" action="{{ route('category.store') }}" class="form-horizontal style-form" method="post">
+                        <form role="form" action="{{ route('video.store') }}" class="form-horizontal style-form" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group has-success">
                                 <label class="col-lg-2 control-label">Video Title Name</label>
@@ -22,8 +22,9 @@
                                     <select name="category_id" class="form-control">
                                         <option value="" disabled selected>Select a Category</option>
 
-                                            <option value=" "></option>
-
+                                        @foreach($categories as $category)
+                                            <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>
