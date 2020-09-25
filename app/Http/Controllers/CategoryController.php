@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Category;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Str;
 class CategoryController extends Controller
 {
     /**
@@ -34,7 +34,13 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $category = new Category();
+        $category->name = $request->input('name');
+        $category->slug = Str::slug($request->input('name'));
+        $category->save();
+
+        session()->flash('message', 'Hi Added.');
+        return redirect()->route('admin');
     }
 
     /**

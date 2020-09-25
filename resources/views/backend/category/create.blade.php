@@ -13,7 +13,7 @@
                             <div class="form-group has-success">
                                 <label class="col-lg-2 control-label">Category Name</label>
                                 <div class="col-lg-10">
-                                    <input type="text" placeholder="" id="f-name" class="form-control">
+                                    <input type="text" placeholder="Enter Category Name" name="name" id="name" class="form-control" >
                                 </div>
                             </div>
 
