@@ -10,4 +10,9 @@ class BackendController extends Controller
     {
         return view('backend.dashboard');
     }
+/*
+    public  function templatecheck(){
+        return view('backend.category.create');
+    }*/
+
 }
