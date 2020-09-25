@@ -19,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/admin','BackendController@admin')->name('admin');
 Route::get('/','HomeController@index')->name('frontend');
 Route::resource('category', 'CategoryController');
+Route::resource('video', 'VideoController');

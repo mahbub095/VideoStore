@@ -25,7 +25,7 @@
                 <span>Video</span>
             </a>
             <ul class="sub">
-                <li><a href="grids.html">Add</a></li>
+                <li><a href="{{route('video.create')}}">Add</a></li>
                 <li><a href="calendar.html">All</a></li>
             </ul>
         </li>
