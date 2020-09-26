@@ -38,19 +38,8 @@
 						<a href="index-2.html"><img src="{{asset('frontend/assets/img/logo.png')}}" alt="logo" /></a>
 					</div>
 					<div class="header-right">
-						<form action="#">
-							<select>
-								<option value="Movies">Movies</option>
-								<option value="Movies">Movies</option>
-								<option value="Movies">Movies</option>
-							</select>
-							<input type="text"/>
-							<button><i class="icofont icofont-search"></i></button>
-						</form>
-						<ul>
-							<li><a href="#">Welcome Guest!</a></li>
-							<li><a class="login-popup" href="#">Login</a></li>
-						</ul>
+
+
 					</div>
 					<div class="menu-area">
 						<div class="responsive-menu"></div>
@@ -616,327 +605,133 @@
 				</div>
 			</div>
 		</section><!-- hero area end -->
-		<!-- portfolio section start -->
-        <section class="portfolio-area pt-60">
-            <div class="container">
-                <div class="row flexbox-center">
-                    <div class="col-lg-6 text-center text-lg-left">
-                        <div class="section-title">
-                            <h1><i class="icofont icofont-movie"></i> Spotlight This Month</h1>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 text-center text-lg-right">
-                        <div class="portfolio-menu">
-                            <ul>
-                                <li data-filter="*" class="active">Latest</li>
-                                <li data-filter=".soon">Comming Soon</li>
-                                <li data-filter=".top">Top Rated</li>
-                                <li data-filter=".released">Recently Released</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <hr />
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="row portfolio-item">
-                            <div class="col-md-4 col-sm-6 soon released">
-                                <div class="single-portfolio">
-                                    <div class="single-portfolio-img">
-                                        <img src="assets/img/portfolio/portfolio1.png" alt="portfolio" />
-                                        <a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
-                                            <i class="icofont icofont-ui-play"></i>
-                                        </a>
-                                    </div>
-                                    <div class="portfolio-content">
-                                        <h2>Boyz II Men</h2>
-                                        <div class="review">
-                                            <div class="author-review">
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                            </div>
-                                            <h4>180k voters</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 top">
-                                <div class="single-portfolio">
-                                    <div class="single-portfolio-img">
-                                        <img src="assets/img/portfolio/portfolio2.png" alt="portfolio" />
-                                        <a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
-                                            <i class="icofont icofont-ui-play"></i>
-                                        </a>
-                                    </div>
-                                    <div class="portfolio-content">
-                                        <h2>Tale of Revemge</h2>
-                                        <div class="review">
-                                            <div class="author-review">
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                            </div>
-                                            <h4>180k voters</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 soon">
-                                <div class="single-portfolio">
-                                    <div class="single-portfolio-img">
-                                        <img src="assets/img/portfolio/portfolio3.png" alt="portfolio" />
-                                        <a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
-                                            <i class="icofont icofont-ui-play"></i>
-                                        </a>
-                                    </div>
-                                    <div class="portfolio-content">
-                                        <h2>The Lost City of Z</h2>
-                                        <div class="review">
-                                            <div class="author-review">
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                            </div>
-                                            <h4>180k voters</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 top released">
-                                <div class="single-portfolio">
-                                    <div class="single-portfolio-img">
-                                        <img src="assets/img/portfolio/portfolio4.png" alt="portfolio" />
-                                        <a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
-                                            <i class="icofont icofont-ui-play"></i>
-                                        </a>
-                                    </div>
-                                    <div class="portfolio-content">
-                                        <h2>Beast Beauty</h2>
-                                        <div class="review">
-                                            <div class="author-review">
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                            </div>
-                                            <h4>180k voters</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 released">
-                                <div class="single-portfolio">
-                                    <div class="single-portfolio-img">
-                                        <img src="assets/img/portfolio/portfolio5.png" alt="portfolio" />
-                                        <a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
-                                            <i class="icofont icofont-ui-play"></i>
-                                        </a>
-                                    </div>
-                                    <div class="portfolio-content">
-                                        <h2>In The Fade</h2>
-                                        <div class="review">
-                                            <div class="author-review">
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                            </div>
-                                            <h4>180k voters</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6 soon top">
-                                <div class="single-portfolio">
-                                    <div class="single-portfolio-img">
-                                        <img src="assets/img/portfolio/portfolio6.png" alt="portfolio" />
-                                        <a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
-                                            <i class="icofont icofont-ui-play"></i>
-                                        </a>
-                                    </div>
-                                    <div class="portfolio-content">
-                                        <h2>Last Hero</h2>
-                                        <div class="review">
-                                            <div class="author-review">
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                                <i class="icofont icofont-star"></i>
-                                            </div>
-                                            <h4>180k voters</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 text-center text-lg-left">
-                        <div class="portfolio-sidebar">
-                            <img src="assets/img/sidebar/sidebar1.png" alt="sidebar" />
-                            <img src="assets/img/sidebar/sidebar2.png" alt="sidebar" />
-                            <img src="assets/img/sidebar/sidebar3.png" alt="sidebar" />
-                            <img src="assets/img/sidebar/sidebar4.png" alt="sidebar" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- video section start -->
         <section class="video ptb-90">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title pb-20">
-                            <h1><i class="icofont icofont-film"></i> Trailers & Videos</h1>
+                            <h1><i class="icofont icofont-film"></i> Lastest</h1>
                         </div>
                     </div>
                 </div>
                 <hr />
                 <div class="row">
-                    <div class="col-md-9">
-                        <div class="video-area">
-                            <img src="{{asset('frontend/assets/img/video/video1.png')}}" alt="video" />
-                            <a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
-                                <i class="icofont icofont-ui-play"></i>
-                            </a>
-                            <div class="video-text">
-                                <h2>Angle of Death</h2>
-                                <div class="review">
-                                    <div class="author-review">
-                                        <i class="icofont icofont-star"></i>
-                                        <i class="icofont icofont-star"></i>
-                                        <i class="icofont icofont-star"></i>
-                                        <i class="icofont icofont-star"></i>
-                                        <i class="icofont icofont-star"></i>
-                                    </div>
-                                    <h4>180k voters</h4>
-                                </div>
+                    <div class="col-md-12">
+                        <div class="video-slider mt-20">
+                            <?php
+                            $videos = DB::select('SELECT * FROM videos WHERE filter = "A" ');
+                            foreach($videos as  $video)
+                            {
+                                ?>
+                            <div class="video-area">
+                                <img src="{{ URL::asset("images/".$video->image) }}" alt="video" />
+                                <a href="{{$video->link}}" class="popup-youtube">
+                                    <i class="icofont icofont-ui-play"></i>
+                                </a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-6">
-                                <?php
-                                $videos = DB::select('SELECT * FROM videos WHERE filter = "B" ');
-                                foreach($videos as $video){
-                                    ?>
-                                <div class="video-area">
-                                        <img src="{{ URL::asset("images/".$video->image) }}" alt="video" />
-                                        <a href="{{($video->link)}}" class="popup-youtube">
-                                            <i class="icofont icofont-ui-play"></i>
-                                        </a>
-                                    </div>
-                                    <?php } ?>
-                            </div>
-                            {{--<div class="col-md-12 col-sm-6">
-                                <div class="video-area">
-                                    <img src="{{asset('frontend/assets/img/video/video3.png')}}" alt="video" />
-                                    <a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
-                                        <i class="icofont icofont-ui-play"></i>
-                                    </a>
-                                </div>
-                            </div>--}}
+                                <?php } ?>
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-		<!-- news section start -->
-		<section class="news">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-					    <div class="section-title pb-20">
-							<h1><i class="icofont icofont-coffee-cup"></i> Latest News</h1>
-						</div>
-					</div>
-				</div>
-				<hr />
-			</div>
-			<div class="news-slide-area">
-				<div class="news-slider">
-					<div class="single-news">
-						<div class="news-bg-1"></div>
-						<div class="news-date">
-							<h2><span>NOV</span> 25</h2>
-							<h1>2017</h1>
-						</div>
-						<div class="news-content">
-							<h2>The Witch Queen</h2>
-							<p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
-						</div>
-						<a href="#">Read More</a>
-					</div>
-					<div class="single-news">
-						<div class="news-bg-2"></div>
-						<div class="news-date">
-							<h2><span>NOV</span> 25</h2>
-							<h1>2017</h1>
-						</div>
-						<div class="news-content">
-							<h2>The Witch Queen</h2>
-							<p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
-						</div>
-						<a href="#">Read More</a>
-					</div>
-					<div class="single-news">
-						<div class="news-bg-3"></div>
-						<div class="news-date">
-							<h2><span>NOV</span> 25</h2>
-							<h1>2017</h1>
-						</div>
-						<div class="news-content">
-							<h2>The Witch Queen</h2>
-							<p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
-						</div>
-						<a href="#">Read More</a>
-					</div>
-				</div>
-				<div class="news-thumb">
-					<div class="news-next">
-						<div class="single-news">
-							<div class="news-bg-3"></div>
-							<div class="news-date">
-								<h2><span>NOV</span> 25</h2>
-								<h1>2017</h1>
-							</div>
-							<div class="news-content">
-								<h2>The Witch Queen</h2>
-								<p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
-							</div>
-							<a href="#">Read More</a>
-						</div>
-					</div>
-					<div class="news-prev">
-						<div class="single-news">
-							<div class="news-bg-2"></div>
-							<div class="news-date">
-								<h2><span>NOV</span> 25</h2>
-								<h1>2017</h1>
-							</div>
-							<div class="news-content">
-								<h2>The Witch Queen</h2>
-								<p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
-							</div>
-							<a href="#">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section><!-- news section end -->
+
+        <section class="video ptb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title pb-20">
+                            <h1><i class="icofont icofont-film"></i>Educational</h1>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="video-slider mt-20">
+                            <?php
+                            $videos = DB::select('SELECT * FROM videos WHERE filter = "A" ');
+                            foreach($videos as  $video)
+                            {
+                                ?>
+                            <div class="video-area">
+                                <img src="{{ URL::asset("images/".$video->image) }}" alt="video" />
+                                <a href="{{$video->link}}" class="popup-youtube">
+                                    <i class="icofont icofont-ui-play"></i>
+                                </a>
+                            </div>
+                                <?php } ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video ptb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title pb-20">
+                            <h1><i class="icofont icofont-film"></i> Music</h1>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="video-slider mt-20">
+                            <?php
+                            $videos = DB::select('SELECT * FROM videos WHERE filter = "A" ');
+                            foreach($videos as  $video)
+                            {
+                                ?>
+                            <div class="video-area">
+                                <img src="{{ URL::asset("images/".$video->image) }}" alt="video" />
+                                <a href="{{$video->link}}" class="popup-youtube">
+                                    <i class="icofont icofont-ui-play"></i>
+                                </a>
+                            </div>
+                                <?php } ?>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video ptb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title pb-20">
+                            <h1><i class="icofont icofont-film"></i> Sports</h1>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="video-slider mt-20">
+                            <?php
+                            $videos = DB::select('SELECT * FROM videos WHERE filter = "A" ');
+                            foreach($videos as  $video)
+                            {
+                            ?>
+                            <div class="video-area">
+                                <img src="{{ URL::asset("images/".$video->image) }}" alt="video" />
+                                <a href="{{$video->link}}" class="popup-youtube">
+                                    <i class="icofont icofont-ui-play"></i>
+                                </a>
+                            </div>
+                            <?php } ?>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 		<!-- footer section start -->
 		<footer class="footer">
 			<div class="container">
