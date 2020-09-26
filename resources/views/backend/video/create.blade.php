@@ -35,6 +35,12 @@
                                 </div>
                             </div>
                             <div class="form-group has-success">
+                                <label class="col-lg-2 control-label">Filter </label>
+                                <div class="col-lg-10">
+                                    <input type="text" placeholder="Enter Filter   Name" name="filter" id="filter" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="form-group has-success">
                                 <label class="col-lg-2 control-label">Image </label>
                                 <div class="col-lg-10">
                                     <div class="input-group">

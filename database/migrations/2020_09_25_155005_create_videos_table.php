@@ -18,6 +18,7 @@ class CreateVideosTable extends Migration
             $table->string('title');
             $table->unsignedBigInteger('category_id');
             $table->string('link');
+            $table->string('filter');
             $table->string('image');
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->timestamps();

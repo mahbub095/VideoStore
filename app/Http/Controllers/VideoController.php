@@ -66,6 +66,7 @@ class VideoController extends Controller
 
         $video = new Video();
         $video->title = $request->input('title');
+        $video->filter = $request->input('filter');
         $video->category_id = $request->input('category_id');
         $video->link = $request->input('link');
         $video->image = $imageName;
